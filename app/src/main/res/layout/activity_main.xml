@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:text="@string/txtTitle"
+        android:textColor="@color/purple_500"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:layout_width="269dp"
+        android:layout_height="136dp"
+        android:layout_marginTop="160dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.711"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rad4x6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/rad4x6"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/rad5x7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rad5x7"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/rad8x10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rad8x10"
+            android:textSize="24sp" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/hint"
+        android:layout_width="215dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="102dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/hint"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="321dp"
+        android:text="@string/btnCalculate"
+        android:textColor="@color/purple_500"
+        android:textSize="24sp"
+        app:backgroundTint="@color/material_on_primary_emphasis_medium"
+        app:iconTint="@color/cardview_dark_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtResults"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="396dp"
+        android:textColor="@color/purple_500"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
